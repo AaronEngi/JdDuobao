@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lv_item_bid.xml",
+        "source": "C:\\src\\Raider\\app\\src\\main\\res\\layout\\lv_item_bid.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_auction_detail.xml",
+        "source": "C:\\src\\Raider\\app\\src\\main\\res\\layout\\activity_auction_detail.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_commodity_detail.xml",
+        "source": "C:\\src\\Raider\\app\\src\\main\\res\\layout\\activity_commodity_detail.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_auctioning.xml",
+        "source": "C:\\src\\Raider\\app\\src\\main\\res\\layout\\activity_auctioning.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_commidity_list.xml",
+        "source": "C:\\src\\Raider\\app\\src\\main\\res\\layout\\activity_commidity_list.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lv_item_auctioning.xml",
+        "source": "C:\\src\\Raider\\app\\src\\main\\res\\layout\\lv_item_auctioning.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\src\\Raider\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_browser.xml",
+        "source": "C:\\src\\Raider\\app\\src\\main\\res\\layout\\activity_browser.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lv_item_commodity_list.xml",
+        "source": "C:\\src\\Raider\\app\\src\\main\\res\\layout\\lv_item_commodity_list.xml"
+    }
+]

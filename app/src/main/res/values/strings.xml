@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Raider</string>
+    <string name="title_activity_main">夺宝奇兵</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_auctioning">拍卖中</string>
+    <string name="title_activity_browser">BrowserActivity</string>
+    <string name="title_activity_auction_detail">AuctionDetailActivity</string>
+    <string name="title_activity_commidity_list">CommidityListActivity</string>
+    <string name="title_activity_commodity_detail">CommodityDetailActivity</string>
+
+</resources>

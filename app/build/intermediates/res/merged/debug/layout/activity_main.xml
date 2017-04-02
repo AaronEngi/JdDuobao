@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tv_login"
+        style="@style/MainActivityMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登陆" />
+
+    <TextView
+        android:id="@+id/tv_commodity_list"
+        style="@style/MainActivityMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品列表" />
+
+    <TextView
+        android:id="@+id/tv_auctioning"
+        style="@style/MainActivityMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的夺宝箱" />
+
+    <TextView
+        android:id="@+id/tv_clear"
+        style="@style/MainActivityMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清除所有数据" />
+
+    <Button
+        android:id="@+id/main_bn_get_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刷新时间" />
+
+    <TextView
+        android:id="@+id/main_tv_server_time"
+        style="@style/MainActivityMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务器时间" />
+
+</LinearLayout>

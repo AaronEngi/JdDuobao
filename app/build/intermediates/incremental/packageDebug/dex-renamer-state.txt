@@ -1,0 +1,7 @@
+#Sun Apr 02 22:53:14 CST 2017
+base.0=C\:\\src\\Raider\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d31341155c4ab4639a7ea75f60639756dca55318
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\src\\Raider\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8fcc81f75c6dcade4a5232c087ebb775f5d25698\\classes.dex
+base.1=C\:\\src\\Raider\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8fcc81f75c6dcade4a5232c087ebb775f5d25698
+file.0=C\:\\src\\Raider\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d31341155c4ab4639a7ea75f60639756dca55318\\classes.dex

@@ -1,0 +1,132 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:2:1-59:12
+	package
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
+		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
+		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
+		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:8:22-78
+application
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:10:5-57:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\85dc5767aed8c948366d666e1602c4286d484c46\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\bb49a78df8b44541b13bfe8d85d0a8819e819926\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\e3d61ac20a8baa385ec55197f5ef3307800c7acc\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\4241064ab9a56b861f475aad741ecca8ea8ebefb\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\7707d9a4a1ab1d3686c1372b961c4ff6f012ba29\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:13:9-41
+	android:allowBackup
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:12:9-45
+	android:theme
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:14:9-40
+activity#in.tyrael.raider.activity.MainActivity
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:15:9-23:20
+	android:label
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:17:13-56
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:16:13-66
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:21:27-74
+activity#in.tyrael.raider.activity.AuctioningActivity
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:24:9-27:20
+	android:label
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:26:13-62
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:25:13-72
+activity#in.tyrael.raider.activity.BrowserActivity
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:28:9-31:20
+	android:label
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:30:13-59
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:29:13-69
+activity#in.tyrael.raider.activity.AuctionDetailActivity
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:32:9-35:20
+	android:label
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:34:13-66
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:33:13-75
+service#in.tyrael.raider.service.BidService
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:37:9-41:19
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:37:18-68
+intent-filter#in.tyrael.raider.service.BID_SERVICE
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:38:13-40:29
+action#in.tyrael.raider.service.BID_SERVICE
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:39:17-79
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:39:25-76
+activity#in.tyrael.raider.activity.CommodityListActivity
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:43:9-46:20
+	android:label
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:45:13-66
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:44:13-75
+activity#in.tyrael.raider.activity.CommodityDetailActivity
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:47:9-50:20
+	android:label
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:49:13-68
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:48:13-77
+service#in.tyrael.raider.service.PriceHistoryService
+ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:52:9-56:19
+	android:enabled
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:54:13-35
+	android:exported
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:55:13-36
+	android:name
+		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:53:13-72
+uses-sdk
+INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\85dc5767aed8c948366d666e1602c4286d484c46\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\bb49a78df8b44541b13bfe8d85d0a8819e819926\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\e3d61ac20a8baa385ec55197f5ef3307800c7acc\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\4241064ab9a56b861f475aad741ecca8ea8ebefb\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\7707d9a4a1ab1d3686c1372b961c4ff6f012ba29\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
+		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
+		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\85dc5767aed8c948366d666e1602c4286d484c46\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\bb49a78df8b44541b13bfe8d85d0a8819e819926\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\e3d61ac20a8baa385ec55197f5ef3307800c7acc\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\4241064ab9a56b861f475aad741ecca8ea8ebefb\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\7707d9a4a1ab1d3686c1372b961c4ff6f012ba29\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:26:9-47

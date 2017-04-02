@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_commodity_name"
+        style="@style/TvAuctioningName"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dip" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_bid_price"
+        style="@style/TvAuctioningName"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dip" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_bid_time"
+        style="@style/TvAuctioningName"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dip" >
+    </TextView>
+
+</LinearLayout>

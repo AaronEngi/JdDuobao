@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.tyrael.raider"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="in.tyrael.raider.activity.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.tyrael.raider.activity.AuctioningActivity"
+            android:label="@string/title_activity_auctioning" >
+        </activity>
+        <activity
+            android:name="in.tyrael.raider.activity.BrowserActivity"
+            android:label="@string/title_activity_browser" >
+        </activity>
+        <activity
+            android:name="in.tyrael.raider.activity.AuctionDetailActivity"
+            android:label="@string/title_activity_auction_detail" >
+        </activity>
+
+        <service android:name="in.tyrael.raider.service.BidService" >
+            <intent-filter>
+                <action android:name="in.tyrael.raider.service.BID_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="in.tyrael.raider.activity.CommodityListActivity"
+            android:label="@string/title_activity_commidity_list" >
+        </activity>
+        <activity
+            android:name="in.tyrael.raider.activity.CommodityDetailActivity"
+            android:label="@string/title_activity_commodity_detail" >
+        </activity>
+
+        <service
+            android:name="in.tyrael.raider.service.PriceHistoryService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>

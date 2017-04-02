@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AuctionDetailActivity" >
+
+    <TextView
+        android:id="@+id/tv_detail_name"
+        style="@style/MainActivityMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品名称" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/MainActivityMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="京东价" />
+
+        <TextView
+            android:id="@+id/tv_detail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="京东价" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/MainActivityMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="理想价" />
+
+        <EditText
+            android:id="@+id/tv_detail_ideal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="京东价" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果当前出价低于此价格，则加价36" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/MainActivityMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="极限价" />
+
+        <EditText
+            android:id="@+id/tv_detail_extreme_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="京东价" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果当前出价低于此价格，则加价6" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bn_detail_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+            <Button
+        android:id="@+id/bn_detail_bid_instant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立刻出价" />
+
+        <EditText
+            android:id="@+id/tv_detail_price_instant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="价" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_bid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

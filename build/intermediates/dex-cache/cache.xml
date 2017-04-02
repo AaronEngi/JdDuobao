@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\src\Raider\app\libs\log4j-1.2.17.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4f90475694c41965c9a0c8bac53ea5c690dea446">
+        <dex dex="C:\src\Raider\app\build\intermediates\transforms\dex\debug\folders\1000\2\log4j-1.2.17_2ae81c3b4f488d6b05633638e7485c2a17a13af1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\src\Raider\app\libs\android-logging-log4j-1.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bee823e6955d3a5806700026f838ebbca907ac7a">
+        <dex dex="C:\src\Raider\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-logging-log4j-1.0.3_169b46660fdc9feff2cee8915243b79370f81efa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\src\Raider\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\src\Raider\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_8fcc81f75c6dcade4a5232c087ebb775f5d25698\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\src\Raider\app\libs\jsoup-1.7.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab1f22cadc2f8b514e55ba368f5128056fe304da">
+        <dex dex="C:\src\Raider\app\build\intermediates\transforms\dex\debug\folders\1000\2\jsoup-1.7.3_89cb57a13a14d0728e6cdf61a74494b33741e06c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\src\Raider\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="009b098225f51746bae4eed2f84125947529777d">
+        <dex dex="C:\src\Raider\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_d31341155c4ab4639a7ea75f60639756dca55318\classes.dex" />
+    </item>
+
+</items>
