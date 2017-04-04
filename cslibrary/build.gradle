@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        //bulgy https://bugly.qq.com/docs/user-guide/instruction-manual-android-upgrade/?v=20170327204358#gradle
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    //下载上传组件
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+
+    compile 'com.google.code.gson:gson:2.6.2'
+    //snackbar
+    compile 'com.android.support:design:25.3.1'
+
+    //腾讯云分析
+    compile files('libs/mta-android-stat-sdk-2.1.0.jar')
+    compile files('libs/mta-mid-sdk-2.20.jar')
+
+    //bugly崩溃上报、升级组件
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    //compile 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+
+}

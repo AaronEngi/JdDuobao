@@ -34,8 +34,9 @@ public class RaiderHttpUtil {
 
 	public static final String URL_AUCTION_DETAIL = "http://auction.jd.com/detail/"; //http://auction.jd.com/detail/3984525
 	public static final String URL_ITEM = "http://item.jd.com/";//http://item.jd.com/862379.html
-	public static final String URL_MY_AUCTION = "http://auction.jd.com/interest.action";
+	public static final String URL_MY_AUCTION = "https://dbd.jd.com/myTreasureBox.html";
 	static final String URL_SERVER_TIME = "http://auction.jd.com/json/paimai/now";
+	//https://paimai.jd.com/services/now.action?t=1491147324856&callback=jQuery3470348&_=1491147324859
 	
 	public static final String URL_GET_BID = "http://auction.jd.com/json/paimai/bid_records?pageSize=2147483647&dealId=";//http://auction.jd.com/json/paimai/bid_records?dealId=3988052
 	public static final String URL_BID = "http://auction.jd.com/json/paimai/bid?";

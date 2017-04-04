@@ -61,31 +61,31 @@ public class AuctionModel {
 	 * 3. 获取成交价格
 	 */
 	public void syncAuction() {
-		List<AuctionBean> lab = raiderHttpAgent.getMyAuction();
-
-		for (AuctionBean ab : lab) {
-			// 如果已经存在，则不插入
-			if (!auctionDao.existAuction(ab)) {
-				PricePolicy p = new PricePolicyImpl();
-				CommodityBean cb = p.setPrice(ab.getCommodity());
-				ab.setCommodity(auctionDao.insertCommodity(cb));
-				auctionDao.insertAuction(ab);
-				auctionDao.insertAuctionWanted(ab);
-				Log.d("test", "auction inserted");
-
-				// 发送广播，获取成交价格，这个操作需要在拍卖结束时进行。
-				AlarmManager alarmManager = (AlarmManager) context
-						.getSystemService(context.ALARM_SERVICE);
-				Intent intent = new Intent();
-				intent.setAction(PriceHistoryService.RECEIVER_PRICE_HISTORY);
-				PendingIntent pendingIntent = PendingIntent.getBroadcast(
-						context, PriceHistoryService.getAlarmId(), intent, 0);
-				Long triggerTime = ab.getEndTime() + 3000;
-				triggerTime = System.currentTimeMillis() > triggerTime ? System
-						.currentTimeMillis() + 3000 : triggerTime;
-				alarmManager.set(AlarmManager.RTC_WAKEUP,
-						ab.getEndTime() + 3000, pendingIntent);
-			}
-		}
+//		List<AuctionBean> lab = raiderHttpAgent.getMyAuction();
+//
+//		for (AuctionBean ab : lab) {
+//			// 如果已经存在，则不插入
+//			if (!auctionDao.existAuction(ab)) {
+//				PricePolicy p = new PricePolicyImpl();
+//				CommodityBean cb = p.setPrice(ab.getCommodity());
+//				ab.setCommodity(auctionDao.insertCommodity(cb));
+//				auctionDao.insertAuction(ab);
+//				auctionDao.insertAuctionWanted(ab);
+//				Log.d("test", "auction inserted");
+//
+//				// 发送广播，获取成交价格，这个操作需要在拍卖结束时进行。
+//				AlarmManager alarmManager = (AlarmManager) context
+//						.getSystemService(context.ALARM_SERVICE);
+//				Intent intent = new Intent();
+//				intent.setAction(PriceHistoryService.RECEIVER_PRICE_HISTORY);
+//				PendingIntent pendingIntent = PendingIntent.getBroadcast(
+//						context, PriceHistoryService.getAlarmId(), intent, 0);
+//				Long triggerTime = ab.getEndTime() + 3000;
+//				triggerTime = System.currentTimeMillis() > triggerTime ? System
+//						.currentTimeMillis() + 3000 : triggerTime;
+//				alarmManager.set(AlarmManager.RTC_WAKEUP,
+//						ab.getEndTime() + 3000, pendingIntent);
+//			}
+//		}
 	}
 }

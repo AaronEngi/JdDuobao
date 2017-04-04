@@ -162,95 +162,9 @@ public class RaiderHttpAgent {
 		
 	}
 
-	/**
-	 * 获取commodity详细信息
-	 * TODO 目前是通过解析auction详情页面获取商品信息,必须有auction的id
-	 * 
-	 * auction详情页面
 
-	 * @return
-	 */
-	public CommodityBean getCommodityByAuction(CommodityBean cb, AuctionBean ab) {
-		if (cb == null || ab == null || ab.getCommodity() == null) {
-			throw new RuntimeException("商品不能为空");
-		}
-		String html = RaiderHttpUtil.getHtml(
-				RaiderHttpUtil.URL_AUCTION_DETAIL + ab.getJdId(),
-				cookie);
-		if (html != null && !"".equals(html)) {
-			Document doc = Jsoup.parse(html);
-			Elements esJdId = doc.select("#aprinfo");
-			String str = esJdId.get(0).attr("data-url");///json/paimai/productDesciption?productId=713714
-			String strJdId = str.substring(str.indexOf("=") + 1);
-			int jdId = Integer.valueOf(strJdId);
-			cb.setJdId(jdId);
-			ab.getCommodity().setJdId(jdId);
-			
-			Elements esPrice = doc.select("#product-intro").select("del");
-			String strp = esPrice.text();
-			strp = strp.substring(1, strp.length());// ￥679.00
-			cb.setJdPrice((int) (Float.valueOf(strp) * 100));// 单位分
-			ab.getCommodity().setJdPrice((int) (Float.valueOf(strp) * 100));
-			return cb;
 
-		}else{
-			throw new RuntimeException("html为空");
-		}
-	}
 
-	/**
-	 * 返回我的夺宝箱，解析加入数据库
-	 */
-	public List<AuctionBean> getMyAuction() {
-		// TODO
-		if (!isLogin()) {
-
-		}
-		List<AuctionBean> lab = new ArrayList<AuctionBean>();
-		String htmlMyAuction = RaiderHttpUtil.getHtml(
-				RaiderHttpUtil.URL_MY_AUCTION, cookie);
-		// 解析 TODO
-		if (htmlMyAuction != null && !"".equals(htmlMyAuction)) {
-			Document doc = Jsoup.parse(htmlMyAuction);
-			Elements trs = doc.select("table").select("tr");
-			for (int i = 0; i < trs.size(); i++) {
-				Elements tds = trs.get(i).select("td");
-
-				// Log.d("AgentSize", String.valueOf(tds.size()));
-				// 注意跳过表头,表头的size为0
-				if (tds.size() > 1) {
-					Element td0 = tds.get(0);
-					Elements imgs = tds.get(0).select("img");
-
-					// 1. 查看商品是否存在
-					CommodityBean cb = new CommodityBean();
-					cb.setName(tds.get(0).select("img").get(0).attr("title"));
-
-					// 2. 创建Auction对象。
-					AuctionBean ab = new AuctionBean();
-					
-
-					ab.setJdId(Integer.valueOf(tds.get(1).text()));
-					ab.setCommodity(cb);
-					ab.setCommodity(getCommodityByAuction(cb, ab));
-					
-					SimpleDateFormat sdf = new SimpleDateFormat(
-							"yyyy-MM-dd HH:mm");
-					try {
-						ab.setStartTime(sdf.parse(tds.get(4).text()).getTime());
-						ab.setEndTime(sdf.parse(tds.get(5).text()).getTime());
-					} catch (ParseException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}				
-
-					lab.add(ab);
-				}
-
-			}
-		}
-		return lab;
-	}
 	
 	/*
 	 * 返回参数与服务器时间的差。
@@ -260,5 +174,9 @@ public class RaiderHttpAgent {
 		String json = RaiderHttpUtil.getHtml(RaiderHttpUtil.URL_SERVER_TIME);
 		long nowServer = Long.valueOf(json.substring(7, 20));
 		return future - nowServer;
+	}
+
+	public static String getHtml(String urlMyAuction) {
+		return RaiderHttpUtil.getHtml(urlMyAuction, cookie);
 	}
 }

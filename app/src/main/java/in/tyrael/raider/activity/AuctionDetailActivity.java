@@ -2,11 +2,16 @@ package in.tyrael.raider.activity;
 
 import in.tyrael.raider.R;
 import in.tyrael.raider.bean.AuctionBean;
+import in.tyrael.raider.bean.BidBean;
+import in.tyrael.raider.bean.CommodityBean;
 import in.tyrael.raider.dao.AuctionDaoImpl;
 import in.tyrael.raider.dao.face.AuctionDao;
+import in.tyrael.raider.presenter.AuctionDetailPresenter;
 import in.tyrael.raider.service.BidService;
 import in.tyreal.raider.net.RaiderHttpAgent;
+import wang.tyrael.dbd.jdapi.json.BidList;
 
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -28,13 +33,21 @@ public class AuctionDetailActivity extends Activity {
 	private static final int BID_MESSAGE_WHAT = 168;
 	private final Logger log = Logger.getLogger(MainActivity.class);
 
+	public static final String BUNDLE_DUOBAO_ID = "BUNDLE_DUOBAO_ID";
+
 	AuctionBean auctionBean;
+	int duobaoId;
+
 	RaiderHttpAgent raiderHttpAgent;
 	AuctionDao auctionDao;
+
+	AuctionDetailPresenter presenter = new AuctionDetailPresenter();
 	
 	TextView tvPriceInstant;
 	TextView tvPriceIdeal;
 	TextView tvPriceExtreme;
+    TextView tvDetailName;
+    TextView tvDetailJdPrice;
 
 	LvBidAdapter lvBidAdapter;
 
@@ -64,37 +77,55 @@ public class AuctionDetailActivity extends Activity {
 		tvPriceIdeal = (TextView) findViewById(R.id.tv_detail_ideal_price);
 		tvPriceExtreme = (TextView) findViewById(R.id.tv_detail_extreme_price);
 
-		TextView tvDetailName = (TextView) findViewById(R.id.tv_detail_name);
-		TextView tvDetailJdPrice = (TextView) findViewById(R.id.tv_detail_price);
+		tvDetailName = (TextView) findViewById(R.id.tv_detail_name);
+		tvDetailJdPrice = (TextView) findViewById(R.id.tv_detail_price);
 		ListView lvBid = (ListView) findViewById(R.id.lv_bid);
 		lvBid.setAdapter(lvBidAdapter);
 
-		auctionBean = (AuctionBean) getIntent().getSerializableExtra(
-				"AuctionBean");
-		if (auctionBean != null || auctionBean.getCommodity() != null) {
-			tvDetailName.setText(auctionBean.getCommodity().getName());
-			tvDetailJdPrice.setText(Integer.toString(auctionBean.getCommodity()
+//		auctionBean = (AuctionBean) getIntent().getSerializableExtra(
+//				"AuctionBean");
+		duobaoId = getIntent().getIntExtra(BUNDLE_DUOBAO_ID, 0);
+		presenter.setDuobaoId(duobaoId);
+		presenter.loadMain();
+//		if (auctionBean != null || auctionBean.getCommodity() != null) {
+//			tvDetailName.setText(auctionBean.getCommodity().getName());
+//			tvDetailJdPrice.setText(Integer.toString(auctionBean.getCommodity()
+//					.getJdPrice() / 100) + "元");
+//			tvPriceIdeal.setText(Integer.toString(auctionBean.getCommodity().getPriceIdeal() / 100)
+//					+ "元");
+//			tvPriceExtreme.setText(Integer.toString(auctionBean.getCommodity().getPriceExtreme() / 100)
+//					+ "元");
+//			raiderHttpAgent = RaiderHttpAgent.getInstance();
+//			new Timer().schedule(new TimerTask() {
+//
+//				@Override
+//				public void run() {
+//					// TODO Auto-generated method stub
+//					lvBidAdapter.setListBidBean(raiderHttpAgent.getBid(auctionBean));
+//					bidHandler.removeMessages(BID_MESSAGE_WHAT); // 移除过时的消息
+//					bidHandler.sendEmptyMessage(BID_MESSAGE_WHAT); // 告诉主线程，更新
+//				}
+//			}, 0, 800);
+//
+//			bnSave.setOnClickListener(bnListener);
+//			bnBidInstant.setOnClickListener(bnListener);
+//
+//		}
+
+	}
+
+	public void updateProdcut(CommodityBean commodityBean){
+        tvDetailName.setText(commodityBean.getName());
+		tvDetailJdPrice.setText(Integer.toString(commodityBean
 					.getJdPrice() / 100) + "元");
-			tvPriceIdeal.setText(Integer.toString(auctionBean.getCommodity().getPriceIdeal() / 100)
-					+ "元");
-			tvPriceExtreme.setText(Integer.toString(auctionBean.getCommodity().getPriceExtreme() / 100)
-					+ "元");
-			raiderHttpAgent = RaiderHttpAgent.getInstance();
-			new Timer().schedule(new TimerTask() {
+	}
 
-				@Override
-				public void run() {
-					// TODO Auto-generated method stub
-					lvBidAdapter.setListBidBean(raiderHttpAgent.getBid(auctionBean));
-					bidHandler.removeMessages(BID_MESSAGE_WHAT); // 移除过时的消息
-					bidHandler.sendEmptyMessage(BID_MESSAGE_WHAT); // 告诉主线程，更新
-				}
-			}, 0, 800);
+	public void updateBid(List<BidBean> list){
+        lvBidAdapter.setListBidBean(list);
+        lvBidAdapter.notifyDataSetChanged();
+	}
 
-			bnSave.setOnClickListener(bnListener);
-			bnBidInstant.setOnClickListener(bnListener);
-
-		}
+	public void updateBidSetting(){
 
 	}
 

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".activity.MainActivity" >
 
     <TextView
         android:id="@+id/tv_login"
@@ -11,6 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="登陆" />
+
+    <EditText
+        android:id="@+id/et_duobaoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="输入夺宝Id,进行跳转"
+        />
+    <Button
+        android:id="@+id/bt_toDuobao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="去夺宝" />
+
 
     <TextView
         android:id="@+id/tv_commodity_list"

@@ -22,12 +22,14 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnClickListener {
 	private final Logger log = Logger.getLogger(MainActivity.class);
 	private TextView tvServerTime;
+	private EditText etDuobaoId;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		findViewById(R.id.tv_clear).setOnClickListener(this);
 		findViewById(R.id.main_bn_get_time).setOnClickListener(this);
 		tvServerTime = (TextView) findViewById(R.id.main_tv_server_time);
+		etDuobaoId = (EditText) findViewById(R.id.et_duobaoId);
 
 		// 启动服务
 		Intent i = new Intent(MainActivity.this, BidService.class);
@@ -50,10 +53,10 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		Intent intent2 = new Intent(MainActivity.this,
 				CommandExecutorReceiver.class);
-		PendingIntent pendingIntent = PendingIntent.getBroadcast(
-				MainActivity.this, 0, intent2, Intent.FLAG_ACTIVITY_NEW_TASK);
-		am.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 5000,
-				pendingIntent);
+//		PendingIntent pendingIntent = PendingIntent.getBroadcast(
+//				MainActivity.this, 0, intent2, Intent.FLAG_ACTIVITY_NEW_TASK);
+//		am.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 5000,
+//				pendingIntent);
 		Log.d("raiderservice", "set");
 	}
 
@@ -62,6 +65,13 @@ public class MainActivity extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		Intent intent = null;
 		switch (v.getId()) {
+			case R.id.bt_toDuobao:
+				int duoBaoId = Integer.parseInt(etDuobaoId.getText().toString());
+				intent = new Intent();
+				intent.setClass(MainActivity.this, AuctionDetailActivity.class);
+                intent.putExtra(AuctionDetailActivity.BUNDLE_DUOBAO_ID, duoBaoId);
+				startActivity(intent);
+				break;
 
 		case R.id.tv_auctioning:
 

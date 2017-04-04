@@ -17,20 +17,29 @@ ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:2:1-59:12
 		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:7:5-67
+MERGED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:16:5-67
 	android:name
 		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:8:5-81
+MERGED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:21:5-81
 	android:name
 		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:8:22-78
 application
 ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:10:5-57:19
+MERGED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:23:5-29:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\d82dad614be639ded9be4b2e369ae119fd0b849f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\8a80687f1215f3f06d54172233b7818fb1748efe\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\ab9f5b1b9e6423be3e9efb68ef2bcd8e06f0c61e\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\ad96479cf50ccd46a813f2953ee8413bb79642fe\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\e35dfe7ec47c2ffae52437cc790d5baf59698a9d\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\85dc5767aed8c948366d666e1602c4286d484c46\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\bb49a78df8b44541b13bfe8d85d0a8819e819926\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\e3d61ac20a8baa385ec55197f5ef3307800c7acc\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\4241064ab9a56b861f475aad741ecca8ea8ebefb\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\7707d9a4a1ab1d3686c1372b961c4ff6f012ba29\output\AndroidManifest.xml:29:5-20
+MERGED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:9:5-26:19
 	android:label
 		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:13:9-41
 	android:allowBackup
@@ -105,28 +114,92 @@ ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:52:9-56:19
 		ADDED from C:\src\Raider\app\src\main\AndroidManifest.xml:53:13-72
 uses-sdk
 INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\d82dad614be639ded9be4b2e369ae119fd0b849f\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\8a80687f1215f3f06d54172233b7818fb1748efe\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\ab9f5b1b9e6423be3e9efb68ef2bcd8e06f0c61e\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\ad96479cf50ccd46a813f2953ee8413bb79642fe\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\2bb2e3c8e80d034a44ba699185f58a1a9d58bd2c\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\e35dfe7ec47c2ffae52437cc790d5baf59698a9d\output\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\85dc5767aed8c948366d666e1602c4286d484c46\output\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\bb49a78df8b44541b13bfe8d85d0a8819e819926\output\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\e3d61ac20a8baa385ec55197f5ef3307800c7acc\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\4241064ab9a56b861f475aad741ecca8ea8ebefb\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\7707d9a4a1ab1d3686c1372b961c4ff6f012ba29\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\d82dad614be639ded9be4b2e369ae119fd0b849f\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
 		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
 		INJECTED from C:\src\Raider\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:13:5-75
+	android:name
+		ADDED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:13:22-72
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:17:5-79
+	android:name
+		ADDED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:17:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:18:5-76
+	android:name
+		ADDED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:18:22-73
+uses-permission#android.permission.READ_LOGS
+ADDED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:19:5-68
+	android:name
+		ADDED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:19:22-65
+activity#com.tencent.bugly.beta.ui.BetaActivity
+ADDED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:26:9-28:64
+	android:theme
+		ADDED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:28:13-61
+	android:name
+		ADDED from [Raider:cslibrary:unspecified] C:\src\Raider\cslibrary\build\intermediates\bundles\default\AndroidManifest.xml:27:13-66
 meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\d82dad614be639ded9be4b2e369ae119fd0b849f\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Administrator\.android\build-cache\8a80687f1215f3f06d54172233b7818fb1748efe\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\ab9f5b1b9e6423be3e9efb68ef2bcd8e06f0c61e\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Administrator\.android\build-cache\ad96479cf50ccd46a813f2953ee8413bb79642fe\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Administrator\.android\build-cache\2bb2e3c8e80d034a44ba699185f58a1a9d58bd2c\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Administrator\.android\build-cache\e35dfe7ec47c2ffae52437cc790d5baf59698a9d\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Administrator\.android\build-cache\85dc5767aed8c948366d666e1602c4286d484c46\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Administrator\.android\build-cache\bb49a78df8b44541b13bfe8d85d0a8819e819926\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Administrator\.android\build-cache\e3d61ac20a8baa385ec55197f5ef3307800c7acc\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Administrator\.android\build-cache\4241064ab9a56b861f475aad741ecca8ea8ebefb\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Administrator\.android\build-cache\7707d9a4a1ab1d3686c1372b961c4ff6f012ba29\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\d82dad614be639ded9be4b2e369ae119fd0b849f\output\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Administrator\.android\build-cache\34da57c39936ae32e23bc05b7f7fd8a6080ab91c\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Administrator\.android\build-cache\d82dad614be639ded9be4b2e369ae119fd0b849f\output\AndroidManifest.xml:26:9-47
+service#com.tencent.bugly.beta.tinker.TinkerResultService
+ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:12:9-14:40
+	android:exported
+		ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:14:13-37
+	android:name
+		ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:13:13-77
+service#com.tencent.tinker.lib.service.TinkerPatchService
+ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:15:9-18:40
+	android:process
+		ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:18:13-37
+	android:exported
+		ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:17:13-37
+	android:name
+		ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:16:13-77
+service#com.tencent.tinker.lib.service.TinkerPatchService$InnerService
+ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:19:9-22:40
+	android:process
+		ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:22:13-37
+	android:exported
+		ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:20:13-90
+service#com.tencent.tinker.lib.service.DefaultTinkerResultService
+ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:23:9-25:40
+	android:exported
+		ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [com.tencent.bugly:crashreport_upgrade:1.2.4.0] C:\Users\Administrator\.android\build-cache\c1394508f09b816f07681b7fdc1f1e308e746d19\output\AndroidManifest.xml:24:13-85
