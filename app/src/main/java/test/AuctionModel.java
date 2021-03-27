@@ -1,21 +1,10 @@
 package test;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
-import in.tyrael.raider.bean.AuctionBean;
-import in.tyrael.raider.dao.AuctionDaoImpl;
-import in.tyrael.raider.dao.face.AuctionDao;
-import in.tyrael.raider.service.BidService;
-import in.tyrael.raider.service.PriceHistoryService;
-import in.tyreal.raider.net.RaiderHttpAgent;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.List;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -26,27 +15,33 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import in.tyrael.raider.bean.AuctionBean;
+import in.tyrael.raider.dao.AuctionDaoImpl;
+import in.tyrael.raider.dao.face.AuctionDao;
+import in.tyrael.raider.service.PriceHistoryService;
+import in.tyreal.raider.net.RaiderHttpAgent;
 
 /**
  * 业务逻辑，综合数据库和网络操作
- * 
+ *
  * @author Tyrael
- * 
+ *
  */
 public class AuctionModel {
 	private static final String URL_MY_AUCTION = "http://auction.jd.com/interest.action";
-	private static final String URL_JSON = 
+	private static final String URL_JSON =
 			"http://auction.jd.com/json/paimai/bid_records?t=1384522506650&dealId=3977982&pageNo=1&pageSize=2147483647";
 
-	private AuctionDao auctionDao;
-	private RaiderHttpAgent raiderHttpAgent;
-	private Context context;
-	
+	private final AuctionDao auctionDao;
+	private final RaiderHttpAgent raiderHttpAgent;
+	private final Context context;
+
 	public AuctionModel(Context context) {
 		super();
 		this.context = context;
@@ -60,7 +55,8 @@ public class AuctionModel {
 	 * 3. 获取成交价格
 	 */
 	public void syncAuction() {
-		List<AuctionBean> lab = raiderHttpAgent.getMyAuction();
+//		List<AuctionBean> lab = raiderHttpAgent.getMyAuction();
+		List<AuctionBean> lab = new ArrayList<>();
 
 		for (AuctionBean ab : lab) {
 			// 如果已经存在，则不插入
@@ -72,7 +68,7 @@ public class AuctionModel {
 
 				// 发送广播，获取成交价格，这个操作需要在拍卖结束时进行。
 				AlarmManager alarmManager = (AlarmManager) context
-						.getSystemService(context.ALARM_SERVICE);
+						.getSystemService(Context.ALARM_SERVICE);
 				Intent intent = new Intent();
 				intent.setAction(PriceHistoryService.RECEIVER_PRICE_HISTORY);
 				PendingIntent pendingIntent = PendingIntent.getBroadcast(
