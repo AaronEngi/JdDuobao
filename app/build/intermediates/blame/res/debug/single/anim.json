@@ -12,24 +12,28 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\d82dad614be639ded9be4b2e369ae119fd0b849f\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
-    },
-    {
-        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\anim\\design_fab_out.xml"
     },
     {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_popup_exit.xml"
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
@@ -40,8 +44,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\d82dad614be639ded9be4b2e369ae119fd0b849f\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
@@ -52,15 +64,67 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\d82dad614be639ded9be4b2e369ae119fd0b849f\\output\\res\\anim\\design_fab_out.xml"
     },
     {
-        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\d82dad614be639ded9be4b2e369ae119fd0b849f\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\anim\\design_snackbar_out.xml"
     }
 ]

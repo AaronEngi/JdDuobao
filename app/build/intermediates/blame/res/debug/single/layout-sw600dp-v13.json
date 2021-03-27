@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+    },
+    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\d82dad614be639ded9be4b2e369ae119fd0b849f\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     }

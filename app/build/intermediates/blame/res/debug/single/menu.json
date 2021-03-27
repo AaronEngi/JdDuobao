@@ -1,7 +1,23 @@
 [
     {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\menu\\commidity_list.xml",
+        "source": "C:\\Tyrael\\Code\\JdDuobao\\app\\src\\main\\res\\menu\\commidity_list.xml"
+    },
+    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "C:\\src\\Raider\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\menu\\commodity_detail.xml",
+        "source": "C:\\Tyrael\\Code\\JdDuobao\\app\\src\\main\\res\\menu\\commodity_detail.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\menu\\browser.xml",
+        "source": "C:\\Tyrael\\Code\\JdDuobao\\app\\src\\main\\res\\menu\\browser.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\menu\\auctioning.xml",
+        "source": "C:\\Tyrael\\Code\\JdDuobao\\app\\src\\main\\res\\menu\\auctioning.xml"
     },
     {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\menu\\commodity_detail.xml",
@@ -20,7 +36,15 @@
         "source": "C:\\src\\Raider\\app\\src\\main\\res\\menu\\auctioning.xml"
     },
     {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Tyrael\\Code\\JdDuobao\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\menu\\auction_detail.xml",
         "source": "C:\\src\\Raider\\app\\src\\main\\res\\menu\\auction_detail.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\menu\\auction_detail.xml",
+        "source": "C:\\Tyrael\\Code\\JdDuobao\\app\\src\\main\\res\\menu\\auction_detail.xml"
     }
 ]

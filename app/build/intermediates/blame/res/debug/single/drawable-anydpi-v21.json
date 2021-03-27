@@ -1,10 +1,18 @@
 [
     {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+    },
+    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\d82dad614be639ded9be4b2e369ae119fd0b849f\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
     {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\d82dad614be639ded9be4b2e369ae119fd0b849f\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     }
 ]

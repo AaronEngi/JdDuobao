@@ -4,8 +4,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\d82dad614be639ded9be4b2e369ae119fd0b849f\\output\\res\\color-v23\\design_tint_password_toggle.xml"
     },
     {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
@@ -20,6 +32,18 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\color-v23\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
     },
@@ -32,12 +56,32 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
+    },
+    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\color-v23\\design_tint_password_toggle.xml"
+    },
+    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\8a80687f1215f3f06d54172233b7818fb1748efe\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\df9c3724b1d946b6da7f10cf5dc4a5c65590d7a5\\output\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",

@@ -1,22 +1,5 @@
 package in.tyrael.raider.activity;
 
-import in.tyrael.raider.R;
-import in.tyrael.raider.bean.AuctionBean;
-import in.tyrael.raider.bean.BidBean;
-import in.tyrael.raider.bean.CommodityBean;
-import in.tyrael.raider.dao.AuctionDaoImpl;
-import in.tyrael.raider.dao.face.AuctionDao;
-import in.tyrael.raider.presenter.AuctionDetailPresenter;
-import in.tyrael.raider.service.BidService;
-import in.tyreal.raider.net.RaiderHttpAgent;
-import wang.tyrael.dbd.jdapi.json.BidList;
-
-import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
-
-import org.apache.log4j.Logger;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,6 +11,20 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.apache.log4j.Logger;
+
+import java.util.List;
+
+import in.tyrael.raider.R;
+import in.tyrael.raider.bean.AuctionBean;
+import in.tyrael.raider.bean.BidBean;
+import in.tyrael.raider.bean.CommodityBean;
+import in.tyrael.raider.dao.AuctionDaoImpl;
+import in.tyrael.raider.dao.face.AuctionDao;
+import in.tyrael.raider.presenter.AuctionDetailPresenter;
+import in.tyrael.raider.service.BidService;
+import in.tyreal.raider.net.RaiderHttpAgent;
 
 public class AuctionDetailActivity extends Activity {
 	private static final int BID_MESSAGE_WHAT = 168;
@@ -67,19 +64,19 @@ public class AuctionDetailActivity extends Activity {
 
 		ButtonOnClickListener bnListener = new ButtonOnClickListener();
 		lvBidAdapter = new LvBidAdapter(AuctionDetailActivity.this);
-		
+
 		auctionDao = AuctionDaoImpl.getAuctionDao(getApplicationContext());
 
-		Button bnBidInstant = (Button) findViewById(R.id.bn_detail_bid_instant);
-		tvPriceInstant = (TextView) findViewById(R.id.tv_detail_price_instant);
+		Button bnBidInstant = findViewById(R.id.bn_detail_bid_instant);
+		tvPriceInstant = findViewById(R.id.tv_detail_price_instant);
 
-		Button bnSave = (Button) findViewById(R.id.bn_detail_save);
-		tvPriceIdeal = (TextView) findViewById(R.id.tv_detail_ideal_price);
-		tvPriceExtreme = (TextView) findViewById(R.id.tv_detail_extreme_price);
+		Button bnSave = findViewById(R.id.bn_detail_save);
+		tvPriceIdeal = findViewById(R.id.tv_detail_ideal_price);
+		tvPriceExtreme = findViewById(R.id.tv_detail_extreme_price);
 
-		tvDetailName = (TextView) findViewById(R.id.tv_detail_name);
-		tvDetailJdPrice = (TextView) findViewById(R.id.tv_detail_price);
-		ListView lvBid = (ListView) findViewById(R.id.lv_bid);
+		tvDetailName = findViewById(R.id.tv_detail_name);
+		tvDetailJdPrice = findViewById(R.id.tv_detail_price);
+		ListView lvBid = findViewById(R.id.lv_bid);
 		lvBid.setAdapter(lvBidAdapter);
 
 //		auctionBean = (AuctionBean) getIntent().getSerializableExtra(
@@ -114,10 +111,10 @@ public class AuctionDetailActivity extends Activity {
 
 	}
 
-	public void updateProdcut(CommodityBean commodityBean){
-        tvDetailName.setText(commodityBean.getName());
-		tvDetailJdPrice.setText(Integer.toString(commodityBean
-					.getJdPrice() / 100) + "元");
+	public void updateProdcut(CommodityBean commodityBean) {
+		tvDetailName.setText(commodityBean.getName());
+		tvDetailJdPrice.setText(commodityBean
+				.getJdPrice() / 100 + "元");
 	}
 
 	public void updateBid(List<BidBean> list){
@@ -133,7 +130,6 @@ public class AuctionDetailActivity extends Activity {
 
 		@Override
 		public void onClick(View v) {
-			// TODO Auto-generated method stub
 			switch (v.getId()) {
 			case R.id.bn_detail_bid_instant:
 				final float priceInstant = Float.valueOf(tvPriceInstant

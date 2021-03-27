@@ -4,6 +4,7 @@ ADDED from C:\Tyrael\Code\JdDuobao\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from C:\Tyrael\Code\JdDuobao\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from C:\Tyrael\Code\JdDuobao\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from C:\Tyrael\Code\JdDuobao\app\src\main\AndroidManifest.xml:2:1-59:12
+MERGED from [com.android.databinding:viewbinding:4.1.3] C:\Users\acer\.gradle\caches\transforms-2\files-2.1\7615270d5f1a941d86acb81741a3b276\viewbinding-4.1.3\AndroidManifest.xml:17:1-22:12
 MERGED from [:cslibrary] C:\Tyrael\Code\JdDuobao\cslibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-31:12
 MERGED from [com.android.support:design:25.3.1] C:\Users\acer\.gradle\caches\transforms-2\files-2.1\92af7b32e06d6c245eff205ead357b84\design-25.3.1\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\acer\.gradle\caches\transforms-2\files-2.1\d908bd0f7d2d0ff6776a9bc3f9d98207\appcompat-v7-25.3.1\AndroidManifest.xml:17:1-31:12
@@ -155,6 +156,8 @@ uses-sdk
 INJECTED from C:\Tyrael\Code\JdDuobao\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Tyrael\Code\JdDuobao\app\src\main\AndroidManifest.xml
 INJECTED from C:\Tyrael\Code\JdDuobao\app\src\main\AndroidManifest.xml
+MERGED from [com.android.databinding:viewbinding:4.1.3] C:\Users\acer\.gradle\caches\transforms-2\files-2.1\7615270d5f1a941d86acb81741a3b276\viewbinding-4.1.3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.databinding:viewbinding:4.1.3] C:\Users\acer\.gradle\caches\transforms-2\files-2.1\7615270d5f1a941d86acb81741a3b276\viewbinding-4.1.3\AndroidManifest.xml:20:5-44
 MERGED from [:cslibrary] C:\Tyrael\Code\JdDuobao\cslibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:cslibrary] C:\Tyrael\Code\JdDuobao\cslibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:25.3.1] C:\Users\acer\.gradle\caches\transforms-2\files-2.1\92af7b32e06d6c245eff205ead357b84\design-25.3.1\AndroidManifest.xml:21:5-23:62
@@ -227,6 +230,8 @@ MERGED from [com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\acer\.gradle\
 		ADDED from [com.tencent.bugly:crashreport_upgrade:1.5.1] C:\Users\acer\.gradle\caches\transforms-2\files-2.1\44543775f9202aa4a0a7fe1098ab2b81\crashreport_upgrade-1.5.1\AndroidManifest.xml:23:13-53
 	android:name
 		ADDED from [:cslibrary] C:\Tyrael\Code\JdDuobao\cslibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-66
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from C:\Tyrael\Code\JdDuobao\app\src\main\AndroidManifest.xml:2:1-59:12 reason: com.csmall.library requested WRITE_EXTERNAL_STORAGE
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] C:\Users\acer\.gradle\caches\transforms-2\files-2.1\92af7b32e06d6c245eff205ead357b84\design-25.3.1\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\acer\.gradle\caches\transforms-2\files-2.1\d908bd0f7d2d0ff6776a9bc3f9d98207\appcompat-v7-25.3.1\AndroidManifest.xml:25:5-27:34

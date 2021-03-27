@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Tyrael\\Code\\JdDuobao\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\acer\\.android\\build-cache\\a819cb57547e5b75f65300792ce49e6baee7deb9\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
         "merged": "C:\\src\\Raider\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\d82dad614be639ded9be4b2e369ae119fd0b849f\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },

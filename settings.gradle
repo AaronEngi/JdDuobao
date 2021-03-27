@@ -1,1 +1,4 @@
 include ':app', ':cslibrary'
+
+include('LibJava')
+project(':LibJava').projectDir = new File(settingsDir, '../LibJava')
