@@ -26,6 +26,7 @@ import in.tyrael.raider.log.ConfigureLog4J;
 import in.tyrael.raider.service.BidService;
 import in.tyrael.raider.service.BidService.CommandExecutorReceiver;
 import in.tyreal.raider.net.RaiderHttpAgent;
+import tyrael.duobao.activity.DeveloperActivity;
 
 public class MainActivity extends Activity implements OnClickListener {
 	private final Logger log = Logger.getLogger(MainActivity.class);
@@ -42,6 +43,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		viewBinding = ActivityMainBinding.inflate(getLayoutInflater());
 
 		setContentView(viewBinding.getRoot());
+
+		viewBinding.testBn.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(MainActivity.this, DeveloperActivity.class));
+			}
+		});
+
 		findViewById(R.id.tv_auctioning).setOnClickListener(this);
 		findViewById(R.id.tv_login).setOnClickListener(this);
 		findViewById(R.id.tv_commodity_list).setOnClickListener(this);

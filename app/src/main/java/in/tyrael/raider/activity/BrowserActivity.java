@@ -1,29 +1,25 @@
 package in.tyrael.raider.activity;
 
-import in.tyrael.raider.R;
-import in.tyrael.raider.dao.AuctionDaoImpl;
-import in.tyrael.raider.dao.AuctionSQLiteHelper;
-import in.tyreal.raider.net.RaiderHttpAgent;
-import in.tyreal.raider.net.RaiderHttpUtil;
-import android.os.Bundle;
 import android.app.Activity;
-import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import in.tyrael.raider.R;
+import in.tyreal.raider.net.RaiderHttpAgent;
+import in.tyreal.raider.net.RaiderHttpUtil;
 
 //login activity
 public class BrowserActivity extends Activity {
 	String htmlMyAuction;
 
-	private static final String URL_LOGIN = "http://passport.jd.com/uc/login";
-	private static final String URL_POST_LOGIN = "http://www.jd.com";
-	private static final String URL_POST_LOGIN_MOBILE = "http://m.jd.com";
+	private static final String URL_LOGIN = "https://passport.jd.com/uc/login";
+	private static final String URL_POST_LOGIN = "https://www.jd.com";
+	private static final String URL_POST_LOGIN_MOBILE = "https://m.jd.com";
 
 	public static final String FILE_MY_AUCTION = "/mnt/sdcard/myAuction.html";
 
@@ -35,7 +31,7 @@ public class BrowserActivity extends Activity {
 
 		CookieManager.getInstance().setAcceptCookie(true);
 
-		final WebView wvBrowser = (WebView) findViewById(R.id.wv_browser);
+		final WebView wvBrowser = findViewById(R.id.wv_browser);
 		//模拟电脑访问
 		wvBrowser.getSettings().setUserAgentString(RaiderHttpUtil.USER_AGENT);
 		//登陆页面有js操作

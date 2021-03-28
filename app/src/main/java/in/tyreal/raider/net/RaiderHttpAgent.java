@@ -1,7 +1,10 @@
 package in.tyreal.raider.net;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import org.apache.log4j.Logger;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -9,21 +12,6 @@ import java.util.List;
 import in.tyrael.raider.RaiderUtil;
 import in.tyrael.raider.bean.AuctionBean;
 import in.tyrael.raider.bean.BidBean;
-import in.tyrael.raider.bean.CommodityBean;
-
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.log4j.Logger;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
-import android.content.Context;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 /**
  * 实现访问网站功能
@@ -162,10 +150,6 @@ public class RaiderHttpAgent {
 		
 	}
 
-
-
-
-	
 	/*
 	 * 返回参数与服务器时间的差。
 	 * {"now":1393255446597}
@@ -179,4 +163,5 @@ public class RaiderHttpAgent {
 	public static String getHtml(String urlMyAuction) {
 		return RaiderHttpUtil.getHtml(urlMyAuction, cookie);
 	}
+
 }

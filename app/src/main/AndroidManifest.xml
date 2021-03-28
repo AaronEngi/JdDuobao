@@ -2,19 +2,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="in.tyrael.raider"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/Theme.AppCompat">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="tyrael.duobao.activity.DeveloperActivity"></activity>
         <activity
-            android:name="in.tyrael.raider.activity.MainActivity"
-            android:label="@string/title_activity_main" >
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,38 +29,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="in.tyrael.raider.activity.AuctioningActivity"
-            android:label="@string/title_activity_auctioning" >
-        </activity>
+            android:name=".activity.AuctioningActivity"
+            android:label="@string/title_activity_auctioning"></activity>
         <activity
-            android:name="in.tyrael.raider.activity.BrowserActivity"
-            android:label="@string/title_activity_browser" >
-        </activity>
+            android:name=".activity.BrowserActivity"
+            android:label="@string/title_activity_browser"></activity>
         <activity
-            android:name="in.tyrael.raider.activity.AuctionDetailActivity"
-            android:label="@string/title_activity_auction_detail" >
-        </activity>
+            android:name=".activity.AuctionDetailActivity"
+            android:label="@string/title_activity_auction_detail"></activity>
 
-        <service android:name="in.tyrael.raider.service.BidService" >
+        <service android:name=".service.BidService">
             <intent-filter>
                 <action android:name="in.tyrael.raider.service.BID_SERVICE" />
             </intent-filter>
         </service>
 
         <activity
-            android:name="in.tyrael.raider.activity.CommodityListActivity"
-            android:label="@string/title_activity_commidity_list" >
-        </activity>
+            android:name=".activity.CommodityListActivity"
+            android:label="@string/title_activity_commidity_list"></activity>
         <activity
-            android:name="in.tyrael.raider.activity.CommodityDetailActivity"
-            android:label="@string/title_activity_commodity_detail" >
-        </activity>
+            android:name=".activity.CommodityDetailActivity"
+            android:label="@string/title_activity_commodity_detail"></activity>
 
         <service
-            android:name="in.tyrael.raider.service.PriceHistoryService"
+            android:name=".service.PriceHistoryService"
             android:enabled="true"
-            android:exported="true" >
-        </service>
+            android:exported="true"></service>
     </application>
 
 </manifest>

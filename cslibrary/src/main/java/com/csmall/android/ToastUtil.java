@@ -3,14 +3,9 @@
  */
 package com.csmall.android;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Looper;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.widget.Toast;
-
-import com.csmall.library.R;
 
 public class ToastUtil {
 
