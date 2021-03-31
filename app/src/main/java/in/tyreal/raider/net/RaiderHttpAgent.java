@@ -7,7 +7,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import in.tyrael.raider.RaiderUtil;
 import in.tyrael.raider.bean.AuctionBean;
@@ -15,75 +17,75 @@ import in.tyrael.raider.bean.BidBean;
 
 /**
  * 实现访问网站功能
- * 
+ *
  * 自己管理cookie字符串
- * 
+ *
  * 处理具体业务逻辑 1. 收发报文 2. 解析html，获取想要的数据
- * 
+ *
  * TODO 设计成单例模式，作为应用的浏览器代理。
- * 
+ *
  * 为方便起见，一部分功能用webview实现。
- * 
+ *
  * 如果想把生命周期实现为整个应用，是否应该作为服务运行？
- * 
+ *
  * 是否设计成单例模式比较好？
- * 
+ *
  * TODO 考虑同步
- * 
+ *
  * 静态函数不用登陆
- * 
+ *
  */
 public class RaiderHttpAgent {
-	private final Logger log = Logger.getLogger(RaiderHttpAgent.class);
-	
-	private static RaiderHttpAgent raiderAgent;
-	
-	//登陆以后，该单例对象保存bidservice中		
-	//状态变量
-	//类上加锁
-	//只有这个状态变量是有用的
-	//整个个应用应该之用一个cookie
-	private static String cookie;
-	
-	public synchronized void setCookie(String strCookie) {
-		RaiderHttpAgent.cookie = strCookie;		
-	}
+    private final Logger log = Logger.getLogger(RaiderHttpAgent.class);
 
-	private RaiderHttpAgent() {
-	}
-	
-	public static synchronized RaiderHttpAgent getInstance() {
-		if (raiderAgent == null) {
-			raiderAgent = new RaiderHttpAgent();
-			//httpClient.getParams().setParameter(ClientPNames.COOKIE_POLICY, CookiePolicy.BROWSER_COMPATIBILITY); 			
-		}
-		return raiderAgent;
-	}
-	
-	public boolean isLogin() {		
-		return true;
-	}
+    private static RaiderHttpAgent raiderAgent;
 
-	// 登陆是异步的？
-	//用广播器，启动一个activity登陆？
-	public void login() {
+    //登陆以后，该单例对象保存bidservice中
+    //状态变量
+    //类上加锁
+    //只有这个状态变量是有用的
+    //整个个应用应该之用一个cookie
+    private static String cookie;
 
-	}
-	
-	//出价
-	public void bid(AuctionBean ab,  int price){
-		// TODO
-		if (!isLogin()) {
-			login();
-		}
-		String url = RaiderHttpUtil.URL_BID + "dealId=" + ab.getJdId() + "&price=" + price/100;
-		RaiderHttpUtil.getHtml(url, cookie);
-		
-		//日志
-		log.info("已发送bid" + RaiderUtil.jdDateFormat.format(new Date(System.currentTimeMillis())));
-		log.info(ab.getCommodity().getName() + "：	出价请求已发送，价格：" + price/100);		
-	}
-	
+    public synchronized void setCookie(String strCookie) {
+        RaiderHttpAgent.cookie = strCookie;
+    }
+
+    private RaiderHttpAgent() {
+    }
+
+    public static synchronized RaiderHttpAgent getInstance() {
+        if (raiderAgent == null) {
+            raiderAgent = new RaiderHttpAgent();
+            //httpClient.getParams().setParameter(ClientPNames.COOKIE_POLICY, CookiePolicy.BROWSER_COMPATIBILITY);
+        }
+        return raiderAgent;
+    }
+
+    public boolean isLogin() {
+        return true;
+    }
+
+    // 登陆是异步的？
+    //用广播器，启动一个activity登陆？
+    public void login() {
+
+    }
+
+    //出价
+    public void bid(AuctionBean ab,  int price){
+        // TODO
+        if (!isLogin()) {
+            login();
+        }
+        String url = RaiderHttpUtil.URL_BID + "dealId=" + ab.getJdId() + "&price=" + price/100;
+        RaiderHttpUtil.getHtml(url, cookie);
+
+        //日志
+        log.info("已发送bid" + RaiderUtil.jdDateFormat.format(new Date(System.currentTimeMillis())));
+        log.info(ab.getCommodity().getName() + "：	出价请求已发送，价格：" + price/100);
+    }
+
 //	auctionStatus: null
 //	datas: [,…]
 //	0: {id:17974796, paimaiDealId:3988052, productId:807028, userNickName:v0ak69ofrp9, bidTime:1384940219948,…}
@@ -108,60 +110,71 @@ public class RaiderHttpAgent {
 //	totalPages: 2
 //	trxBuyerName: "v0ak69ofrp9"
 //	trxPrice: 773
-	
+
 //"id":17970639,"paimaiDealId":3988052,"productId":807028,"userNickName":"lujinlong566","bidTime":1384936060813,"price":17.0,"ipAddress":"60.6.210.241","bidStatus":null}	
-	
-	
-	public List<BidBean> getBid(AuctionBean ab){
-		if(ab == null || ab.getJdId() == 0){
-			throw new RuntimeException("商品id不能为空");
-		}
-		
-		//返回json
-		String html = RaiderHttpUtil.getHtml(
-				RaiderHttpUtil.URL_GET_BID + ab.getJdId(),
-				cookie);
-		//log.info("价格网页解析开始" + RaiderUtil.bidDateFormat.format(new Date(System.currentTimeMillis())));
-		if (html != null && !"".equals(html)) {
-			List<BidBean> lbb = new ArrayList<BidBean>();
-			try {
-				JSONObject joBidRecord = new JSONObject(html);
-				JSONArray joData = joBidRecord.getJSONArray("datas");
-				for(int i =0; i <joData.length(); i++){
-					JSONObject joBid = joData.getJSONObject(i);
-					BidBean bb = new BidBean();
-					bb.setJdId(joBid.getInt("id"));
-					bb.setUserName(joBid.getString("userNickName"));
-					bb.setTime(joBid.getLong("bidTime"));
-					bb.setPrice((int) (joBid.getDouble("price") * 100));
-					lbb.add(bb);
-				}
-				
-			} catch (JSONException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-			return lbb;
 
-		}else{
-			return null;
-		}
-		
-	}
 
-	/*
-	 * 返回参数与服务器时间的差。
-	 * {"now":1393255446597}
-	 */
-	public static long elapsedTime(long future){
-		String json = RaiderHttpUtil.getHtml(RaiderHttpUtil.URL_SERVER_TIME);
-		long nowServer = Long.valueOf(json.substring(7, 20));
-		return future - nowServer;
-	}
+    public List<BidBean> getBid(AuctionBean ab){
+        if(ab == null || ab.getJdId() == 0){
+            throw new RuntimeException("商品id不能为空");
+        }
 
-	public static String getHtml(String urlMyAuction) {
-		return RaiderHttpUtil.getHtml(urlMyAuction, cookie);
-	}
+        //返回json
+        String html = RaiderHttpUtil.getHtml(
+                RaiderHttpUtil.URL_GET_BID + ab.getJdId(),
+                cookie);
+        //log.info("价格网页解析开始" + RaiderUtil.bidDateFormat.format(new Date(System.currentTimeMillis())));
+        if (html != null && !"".equals(html)) {
+            List<BidBean> lbb = new ArrayList<BidBean>();
+            try {
+                JSONObject joBidRecord = new JSONObject(html);
+                JSONArray joData = joBidRecord.getJSONArray("datas");
+                for(int i =0; i <joData.length(); i++){
+                    JSONObject joBid = joData.getJSONObject(i);
+                    BidBean bb = new BidBean();
+                    bb.setJdId(joBid.getInt("id"));
+                    bb.setUserName(joBid.getString("userNickName"));
+                    bb.setTime(joBid.getLong("bidTime"));
+                    bb.setPrice((int) (joBid.getDouble("price") * 100));
+                    lbb.add(bb);
+                }
+
+            } catch (JSONException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+
+            return lbb;
+
+        }else{
+            return null;
+        }
+
+    }
+
+    /*
+     * 返回参数与服务器时间的差。
+     * {"now":1393255446597}
+     */
+    public static long elapsedTime(long future){
+        String json = RaiderHttpUtil.getHtml(RaiderHttpUtil.URL_SERVER_TIME);
+        long nowServer = Long.valueOf(json.substring(7, 20));
+        return future - nowServer;
+    }
+
+    public static String getHtml(String urlMyAuction) {
+        return RaiderHttpUtil.getHtml(urlMyAuction, cookie);
+    }
+
+    public static String getResponseBody(String url){
+        return RaiderHttpUtil.getResponseBody(url, getHeaders());
+    }
+
+    private static Map<String, String> getHeaders(){
+        Map<String, String> headers = new HashMap<>();
+        headers.put("cookies", cookie);
+        headers.put("referer", "https://paipai.m.jd.com/");
+        return headers;
+    }
 
 }

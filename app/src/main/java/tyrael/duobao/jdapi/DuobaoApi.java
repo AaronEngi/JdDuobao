@@ -2,6 +2,8 @@ package tyrael.duobao.jdapi;
 
 import android.util.Log;
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -79,18 +81,19 @@ public class DuobaoApi {
 //    }
 //    }
 
-    public void reminderList() {
+    public ReminderListResponse reminderList() {
         Map<String, String> queries = new HashMap<>();
         queries.put("functionId", "paipai.dbd.reminder.auctionList");
         queries.put("body", "{\"readStatus\":\"\",\"endStatus\":\"0\",\"pageNo\":1,\"pageSize\":20,\"mpSource\":1}");
         queries.put("t", String.valueOf(System.currentTimeMillis()));
         queries.put("appid", "paipai_h5");
 
-
         UrlBuilder urlBuilder = new UrlBuilder(DuobaoUrl.BASE, queries);
         Log.d(DevConfig.TAG, "reminderList: " + urlBuilder.build());
-        String r = RaiderHttpAgent.getHtml(urlBuilder.build());
+        String r = RaiderHttpAgent.getResponseBody(urlBuilder.build());
         Log.d(DevConfig.TAG, "reminderList: " + r);
+
+        return JSON.parseObject(r, ReminderListResponse.class);
     }
 
     public void bid() {

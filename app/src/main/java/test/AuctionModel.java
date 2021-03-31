@@ -55,7 +55,7 @@ public class AuctionModel {
 	 * 3. 获取成交价格
 	 */
 	public void syncAuction() {
-//		List<AuctionBean> lab = raiderHttpAgent.getMyAuction();
+		List<AuctionBean> lab = raiderHttpAgent.getMyAuction("test");
 		List<AuctionBean> lab = new ArrayList<>();
 
 		for (AuctionBean ab : lab) {
